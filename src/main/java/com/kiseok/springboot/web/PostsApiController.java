@@ -1,6 +1,6 @@
 package com.kiseok.springboot.web;
 
-import com.kiseok.springboot.service.posts.PostsService;
+import com.kiseok.springboot.service.PostsService;
 import com.kiseok.springboot.web.dto.PostsResponseDto;
 import com.kiseok.springboot.web.dto.PostsSaveRequestDto;
 import com.kiseok.springboot.web.dto.PostsUpdateRequestDto;

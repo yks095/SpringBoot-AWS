@@ -1,8 +1,7 @@
 package com.kiseok.springboot.config.auth.dto;
 
-import com.kiseok.springboot.web.domain.user.User;
+import com.kiseok.springboot.domain.user.User;
 import lombok.Getter;
-
 import java.io.Serializable;
 
 @Getter

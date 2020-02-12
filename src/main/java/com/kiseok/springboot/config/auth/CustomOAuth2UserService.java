@@ -2,8 +2,8 @@ package com.kiseok.springboot.config.auth;
 
 import com.kiseok.springboot.config.auth.dto.OAuthAttributes;
 import com.kiseok.springboot.config.auth.dto.SessionUser;
-import com.kiseok.springboot.web.domain.user.User;
-import com.kiseok.springboot.web.domain.user.UserRepository;
+import com.kiseok.springboot.domain.user.User;
+import com.kiseok.springboot.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
@@ -43,8 +43,10 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
 
         httpSession.setAttribute("user", new SessionUser(user));
 
-        return new DefaultOAuth2User(Collections.singleton(new SimpleGrantedAuthority(
-                user.getRoleKey())), attributes.getAttributes(), attributes.getNameAttributeKey());
+        return new DefaultOAuth2User(
+                Collections.singleton(new SimpleGrantedAuthority(user.getRoleKey())),
+                attributes.getAttributes(),
+                attributes.getNameAttributeKey());
     }
 
     private User saveOrUpdate(OAuthAttributes attributes)   {

@@ -1,6 +1,6 @@
 package com.kiseok.springboot.config.auth;
 
-import com.kiseok.springboot.web.domain.user.Role;
+import com.kiseok.springboot.domain.user.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
