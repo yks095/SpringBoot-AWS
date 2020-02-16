@@ -1,4 +1,4 @@
-package com.kiseok.springboot.web.web;
+package com.kiseok.springboot.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

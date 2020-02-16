@@ -1,4 +1,4 @@
-package com.kiseok.springboot.web.web;
+package com.kiseok.springboot.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kiseok.springboot.domain.posts.Posts;

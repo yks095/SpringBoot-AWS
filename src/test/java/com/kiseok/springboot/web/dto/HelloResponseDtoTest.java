@@ -1,6 +1,5 @@
-package com.kiseok.springboot.web.web.dto;
+package com.kiseok.springboot.web.dto;
 
-import com.kiseok.springboot.web.dto.HelloResponseDto;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
